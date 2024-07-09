@@ -1,0 +1,32 @@
+<div class="container" id="post-list">
+  <div class="">
+    {% if postListHeadline %}
+    <h1 class="" data-highlight="primary">
+      {{ postListHeadline }}
+    </h1>
+    {% endif %}
+  </div>
+</div>
+
+<div class="container post__list">
+
+  {% for item in postListItems %}
+  <div class="row gx-lg-5">
+    <!-- <div class="col-md-4">
+      <p class="fw-bold text-uppercase opacity-50">{{ item.date | dateFilter }}</p>
+    </div> -->
+    <div class="col-md-7">
+      <section class="mb-5">
+        <p class="text-uppercase opacity-50">{{ item.date | dateFilter }}</p>
+        <h1 class="post__list--title"><a href="{{ item.url }}" class="post-list__link">{{ item.data.title }}</a></h1>
+        <p class="card-text">{{ item.data.intro }}</p>
+        {% if item.data.tags %}
+        {% for tag in item.data.tags %}
+        <a class="post__list--tags" href="/tag/{{ tag | slug }}/">{{ tag | title | replace(' ', '') }}</a>
+        {% endfor %}
+        {% endif %}
+      </section>
+    </div>
+  </div>
+  {% endfor %}
+</div><!-- end .container -->

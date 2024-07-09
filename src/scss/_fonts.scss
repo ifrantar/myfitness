@@ -1,0 +1,24 @@
+@supports (font-variation-settings: normal) {
+
+	html,
+	body {
+		font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 200 900;
+	font-stretch: 75% 125%;
+	font-style: normal;
+	src: url(/fonts/Satoshi-Variable.woff2) format("woff2");
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 200 900;
+	font-stretch: 75% 125%;
+	font-style: italic;
+	src: url(/fonts/Satoshi-VariableItalic.woff2) format("woff2");
+}

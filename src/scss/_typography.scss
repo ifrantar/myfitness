@@ -1,0 +1,67 @@
+body {
+    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif;
+    font-stretch: 100%;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    // text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+h3 {
+    // border-top: 1px solid #e1e1e1;
+    // padding-top: 2rem;
+}
+
+p,
+li {
+    margin-bottom: 1.5rem;
+}
+
+.lead {
+    margin-bottom: 0.5rem;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-weight: 800;
+}
+
+
+.hero-display-1 {
+    font-size: 6rem !important;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-display-1 {
+        font-size: 3rem !important;
+    }
+}
+
+.fw-bold {
+    font-weight: 900 !important;
+}
+
+.text-selection {
+    background: blue;
+    color: white;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    border-radius: 1rem;
+}

@@ -1,0 +1,78 @@
+@use "reset";
+@use "bootstrap";
+@use "colors";
+@use "utilities";
+@use "grids";
+@use "fonts";
+@use "typography";
+@use "icons";
+@use "images";
+@use "theme";
+@use "components";
+@use "navigation";
+@use "scrollCue";
+@use "privacy-message";
+@use "loaders";
+@use "pages";
+
+//Animation for fade in down
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  animation: fadeInDown 0.5s;
+}
+
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  article.px-5 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .hero__home {
+
+    .row>* {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .hero__home {}
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {}
