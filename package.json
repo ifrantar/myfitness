@@ -19,7 +19,7 @@
     "@11ty/eleventy-cache-assets": "^2.2.1",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "bootstrap-icons": "^1.7.1",
-    "concurrently": "^8.2.2",
+    "concurrently": "^9.0.1",
     "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-imagemin": "^2.4.0",
